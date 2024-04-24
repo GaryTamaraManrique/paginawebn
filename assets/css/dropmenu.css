@@ -1,0 +1,64 @@
+.dropdown-menu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Estilo para los enlaces del menú */
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Estilo al pasar el cursor sobre los enlaces */
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo para mostrar el menú al pasar el cursor sobre el elemento padre */
+  .dropdown:hover .dropdown-menu {
+    display: flex; /* Mostrar el menú al pasar el cursor */
+    flex-direction: column; /* Esto hará que los elementos se muestren en una columna */
+  }
+
+
+
+/********ESTILO TEXTO SOBRE IMAGEN*******/
+.image-container {
+  position: relative;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.image-container img {
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  max-width: 100%; /* Garantiza que la imagen no exceda el tamaño del contenedor */
+  border-radius: 10px;
+  opacity: 0.6; 
+}
+
+.text-overlay {
+  color: rgb(49, 47, 47); /* Color de texto oscuro */
+  position: absolute; 
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
+  padding: 10px; /* Espaciado alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  white-space: nowrap; /* Evita que el texto se envuelva */
+}
+
+
+/**/
+
+.row.gtr-uniform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
